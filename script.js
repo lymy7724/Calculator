@@ -26,5 +26,18 @@ function validateOperator(operator) {
     display.value = display.value + operator;
 }
 
-// change eval - use different functions for each operator 
-// maybe create function using regex 
+document.onkeypress = function (e) {
+    e = e || window.event;
+    // use e.keyCode
+    if (e.keyCode >= 48 && e.keyCode <= 57) {
+        display.value = display.value + e.key;
+    }
+    console.log(e)
+    if (e.key == '+' || e.key == '-' || e.key == '*' || e.key == '/' || e.key == '.') {
+        display.value = display.value + e.key;
+    }
+    if (e.key == '=' || e.key == 'Enter') {
+        answer();
+    }
+};
+
