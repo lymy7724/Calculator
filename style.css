@@ -28,7 +28,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 20px;
-
 }
 
 .operator {
@@ -53,4 +52,25 @@ button {
     border: none;
     background-color: grey;
     color: white;
+}
+
+/* mobile phone */
+@media (max-width:600px) {
+    .container {
+        background-color: #c0b7b7;
+        width: 400px;
+        height: 600px;
+    }
+
+    #display {
+        background-color: #c0b7b7;
+        width: 90%;
+    }
+
+    button {
+        height: 80px;
+        width: 80px;
+        border-radius: 80%;
+        font-size: 40px;
+    }
 }
