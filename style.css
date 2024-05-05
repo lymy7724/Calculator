@@ -9,16 +9,17 @@ body {
     width: 500px;
     height: 100%;
     border-radius: 20px;
+    padding: 20px;
 }
 
 #display {
     width: 92%;
     height: 50px;
     padding: 20px;
-    background-color: #212121;
+    background-color: #bdb7b7;
     border: none;
     border-radius: 20px;
-    color: white;
+    color: rgb(58, 56, 56);
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,14 +58,18 @@ button {
 /* mobile phone */
 @media (max-width:600px) {
     .container {
-        background-color: #c0b7b7;
+        background-color: #f1eeee;
         width: 400px;
         height: 600px;
+        border: 2px solid black;
+        padding: 20px;
     }
 
     #display {
-        background-color: #c0b7b7;
+        background-color: #f1eeee;
         width: 90%;
+        border: 2px solid black;
+        color: #212121;
     }
 
     button {
